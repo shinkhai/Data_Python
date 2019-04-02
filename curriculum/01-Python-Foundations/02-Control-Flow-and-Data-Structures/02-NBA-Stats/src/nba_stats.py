@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # TODO: Write a docstring
-
+"""
+This is the 2nd exercice
+"""
 
 def main():
     players = [
@@ -13,8 +15,16 @@ def main():
     # Example:
     # "Total number of points: 34.3"
 
+    total = sum(points)
+
+    print("Total number of points: " + str(total))
+
     # TODO: print out the player with the biggest average points
     # Example: "Best player: Damian Lillard"
+
+    cl = list(zip(points, players))
+    cl.sort(reverse=True)
+    print(cl[0][1])
 
     # TODO: print out the list of players ordered by descending points
 
