@@ -6,6 +6,7 @@ Demo program
 
 def main():
     # TODO: Print out "Hello, World!"
+    print("Hello, World!")
     pass  # You can safely remove this
 
 
