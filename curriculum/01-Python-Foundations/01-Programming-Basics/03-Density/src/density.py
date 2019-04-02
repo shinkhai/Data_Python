@@ -15,6 +15,10 @@ def main():
     # TODO: Write code that prints True if San Francisco is denser than Rio,
     # and False otherwise
 
+    if(san_francisco_pop_density > rio_de_janeiro_pop_density):
+        print("True")
+    else:
+        print("False")
 
 
 if __name__ == '__main__':
