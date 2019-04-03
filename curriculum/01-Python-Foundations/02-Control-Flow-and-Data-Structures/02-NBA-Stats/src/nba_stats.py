@@ -24,10 +24,13 @@ def main():
 
     cl = list(zip(points, players))
     cl.sort(reverse=True)
-    print(cl[0][1])
+    print("Best player: " + cl[0][1])
 
     # TODO: print out the list of players ordered by descending points
-
+    NewList = []
+    for i in range (len(cl)):
+        NewList.append(cl[i][1])
+    print(NewList)
 
 if __name__ == '__main__':
     main()

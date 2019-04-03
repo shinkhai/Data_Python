@@ -18,16 +18,31 @@ def main():
     # that should allow you to
     # implement this in only one line
 
+    stats = dict(zip(players, points))
+    print(stats)
+
     # TODO: What was Stephen Curry average points?
+
+    print(stats["Stephen Curry"])
 
     # TODO: try to print Michael Jordan's average point
     # YOU SHOULD NOT RAISE AN ERROR!
+    
+    print(stats.get("Michael Jordan"))
 
     # TODO: Which player did score 24.9 ?
+
+    for players, points in stats.items():    # for name, age in dictionary.iteritems():  (for Python 2.x)
+        if points == 24.9:
+            print(players)
+
+
 
     # A played is selected if it got a score above 26
     # TODO: Create a dict where keys are the names of the players and values
     #       are True if the player is selected and False otherwise
+
+    
 
     # TODO: Build a list of the names of the selected players: selection
 
